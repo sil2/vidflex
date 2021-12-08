@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests;
+namespace Sil2\Vidflex\Tests;
 
 use Illuminate\Contracts\Console\Kernel;
 

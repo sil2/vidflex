@@ -42,12 +42,19 @@ php artisan db:seed --class="Sil2\Vidflex\Database\Seeds\VidflexSeeder"
 
 ```
 
+Start the server 
+
+```bash
+php artisan serve
+
+```
+
 ### API
 
 ## Auth Token
  
 ```bash
-POST /token/create?email=test@test.comw&password=test
+POST /token/create?email=test@test.com&password=test
 
 ```
 

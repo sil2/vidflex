@@ -108,27 +108,5 @@ class OrderController extends Controller
             \Log::error("Error: " . $e->getMessage() . " (" . $e->getLine() . ")");
             return response()->json('Internal error', 500);
         }
-        /**/
-    }
-
-    /**
-     * http request to update a partner
-     * @param  int  $id      partner_id
-     * @param  Request $request
-     * @return json
-     */
-    public function update(Request $request)
-    {
-        try {
-            $data = $request->all();
-            AuthController::renewToken($request);
-
-            // return new UserResource((new PartnersController())->update($request->user()->id, $data));
-        } catch (ValidationException $e) {
-            return response()->json($e->errors(), 400);
-        } catch (Exception $e) {
-            \Log::error("Error: " . $e->getMessage() . " (" . $e->getLine() . ")");
-            return response()->json('Internal error', 500);
-        }
     }
 }

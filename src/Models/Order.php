@@ -13,11 +13,16 @@ class Order extends Model
         'cancelled_at', 'processed_at', 'closed_at'
     ];
 
+
+    protected $fillable = array('*');
+    protected $guarded  = ['id'];
+
     protected $casts = [
         'cancelled_at' => 'datetime',
         'processed_at' => 'datetime',
         'closed_at'    => 'datetime'
     ];
+
 
     public function user()
     {

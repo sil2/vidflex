@@ -24,9 +24,13 @@
             "Sil2\\Vidflex\\Database\\Seeds\\": "database/seeds/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Sil2\\Vidflex\\Test\\": "tests/"
+        }
+    },
     "config": {
-        "sort-packages": true,
-        "preferred-install": "dist"
+        "sort-packages": true
     },
     "extra": {
         "laravel": {

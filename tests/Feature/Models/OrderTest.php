@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature\Models;
+namespace Sil2\Vidflex\Tests\Feature\Models;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -8,15 +8,17 @@ use Tests\TestCase;
 
 class OrderTest extends TestCase
 {
+
+    public $className = 'Sil2\Vidflex\Models\Order';
+
     /**
-     * A basic feature test example.
+     * Testing address with no argument passed
      *
      * @return void
      */
-    public function test_example()
+    public function testInitOrder()
     {
-        $response = $this->get('/');
-
-        $response->assertStatus(200);
+        $oreder = new \Sil2\Vidflex\Models\Order();
+        $this->assertInstanceOf($this->className, $oreder);
     }
 }

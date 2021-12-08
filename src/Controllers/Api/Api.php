@@ -3,7 +3,6 @@
 namespace Sil2\Vidflex\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\User;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -14,7 +13,7 @@ class Api extends Controller
 {
 
     /**
-     * Create API Bearefr token
+     * Create API Bearer token
      * @param  Request $request
      * @return array
      */

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Unit;
+namespace Sil2\Vidflex\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
 
